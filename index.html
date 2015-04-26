@@ -241,7 +241,7 @@ var btnGuardar2=$("#guardard");
       }else{
     $.ajax({
     type:"POST",
-    url:"guardarDesechables.php",
+    url:"http://sistemas7.260mb.net/guardarDesechables.php",
     data:"nombred="+nombred+"&preciod="+preciod+"&descripciond="+descripciond,
     success: registro2
     });
@@ -256,7 +256,7 @@ var btnGuardar2=$("#guardard");
   btnConsultad.click(function consult(){  
     $.ajax({
     type:"POST",
-    url:"consultaTodosDese.php",
+    url:"http://sistemas7.260mb.net/consultaTodosDese.php",
     data:"",
     success: consultaDatos3
     });
@@ -291,7 +291,7 @@ var btnGuardar2=$("#guardard");
   var valConsultax=$("#valConsultax").val();
     $.ajax({
       type:"POST",
-      url:"consultaUnodes.php",
+      url:"http://sistemas7.260mb.net/consultaUnodes.php",
       data:"id="+valConsultax,
       success: consultaEstudiante2
     });
@@ -309,7 +309,7 @@ var btnConsAct2=$("#btnConsAct2");
   btnConsAct2.click(function cargarDat2(){  
     $.ajax({
     type:"POST",
-    url:"consultaTodosDese.php",
+    url:"http://sistemas7.260mb.net/consultaTodosDese.php",
     data:"",
     success: cargarDatos2
     });
@@ -326,7 +326,7 @@ var btnConsAct2=$("#btnConsAct2");
   var Id=parseInt($("#nomActualizar2").val());
     $.ajax({
     type:"POST",
-    url:"consultaUnodes.php",
+    url:"http://sistemas7.260mb.net/consultaUnodes.php",
     data:"id="+Id,
     success: cargarDatosAct2
     });
@@ -381,7 +381,7 @@ var btnConsAct2=$("#btnConsAct2");
       }else{
 	$.ajax({
 	  type:"POST",
-	  url:"actualizarDesechables.php",
+	  url:"http://sistemas7.260mb.net/actualizarDesechables.php",
 	  data:"id="+Id+"&nombre="+nombre+"&precio="+precio+"&descripcion="+descripcion,
 	  success: actualizacion2
 	 
@@ -398,7 +398,7 @@ var btnConsEliminar2=$("#btnConsEliminar2");
   btnConsEliminar2.click(function conEliminar2(){  
     $.ajax({
     type:"POST",
-    url:"consultaTodosDese.php",
+    url:"http://sistemas7.260mb.net/consultaTodosDese.php",
     data:"",
     success: consultaAntEliminar2
     });
@@ -418,7 +418,7 @@ var btnConsEliminar2=$("#btnConsEliminar2");
       
 	$.ajax({
 	  type:"POST",
-	  url:"eliminarDese.php",
+	  url:"http://sistemas7.260mb.net/eliminarDese.php",
 	  data:"id="+idEliminar2,
 	  success: eliminacion2
 	});
